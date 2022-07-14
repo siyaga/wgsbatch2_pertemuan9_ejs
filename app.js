@@ -7,8 +7,10 @@ const port = 3000
 
     app.get('/', (req, res) => {
     // res.send('Hello World!')
+    
     const nama = "Adi Riyanto";
-    res.render('index',{nama})
+    const title = "WebServer EJS";
+    res.render('index',{nama, title})
     })
 
     app.get('/about', (req, res) => {
